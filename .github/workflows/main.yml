@@ -15,3 +15,4 @@ jobs:
           dest_dir: my-bent-theme
           portal_id: ${{ secrets.hubspot_portal_id }}
           personal_access_key: ${{ secrets.hubspot_personal_access_key }}
+          args: --force
