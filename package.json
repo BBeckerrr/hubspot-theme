@@ -1,5 +1,9 @@
+// package.json
 {
-  "dependencies": {
-    "@hubspot/cli": "^4.1.7"
+  "name": "my-bent-theme",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@hubspot/cli": "^3.0.9",
+    "js-yaml": "^3.13.1",
   }
 }
