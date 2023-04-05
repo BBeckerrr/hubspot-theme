@@ -11,7 +11,7 @@ jobs:
       - name: HubSpot CMS Deploy
         uses: HubSpot/hubspot-cms-deploy-action@v1.6
         with:
-          src_dir: <src> ## ex. src
-          dest_dir: <src> ## ex. my-theme
+          src_dir: my-bent-theme
+          dest_dir: my-bent-theme
           portal_id: ${{ secrets.hubspot_portal_id }}
           personal_access_key: ${{ secrets.hubspot_personal_access_key }}
