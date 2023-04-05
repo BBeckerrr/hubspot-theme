@@ -1,0 +1,136 @@
+[ {
+  "id" : "59847f01-835f-5dbd-40a2-d596a24b1966",
+  "name" : "maandelijks_1",
+  "display_width" : null,
+  "label" : "Maandelijks 1",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "b1794bb4-f328-8ee4-622d-98f14b330fc2",
+  "name" : "maandelijks_2",
+  "display_width" : null,
+  "label" : "Maandelijks 2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "ccdb14c4-30a8-e3c2-77a5-b25944ee1aeb",
+  "name" : "maandelijks_3",
+  "display_width" : null,
+  "label" : "Maandelijks 3",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "623e87b0-b20e-aaac-be77-448efbad5c6f",
+  "name" : "jaarlijks_3",
+  "display_width" : null,
+  "label" : "Jaarlijks 3",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "6a734fd6-60cf-6d19-8d5f-6f924a33ed44",
+  "name" : "jaarlijks_2",
+  "display_width" : null,
+  "label" : "Jaarlijks 2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "91190cf3-6b9e-e7ce-a666-8f79b260112a",
+  "name" : "jaarlijks_1",
+  "display_width" : null,
+  "label" : "Jaarlijks 1",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "ff82de11-da23-6502-7bea-67817425475e",
+  "name" : "pakket_titel_1",
+  "display_width" : null,
+  "label" : "Pakket titel 1",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "75c4c814-7e6e-65ad-ce50-6907424fe7c0",
+  "name" : "pakket_titel_2",
+  "display_width" : null,
+  "label" : "Pakket titel 2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "787d9452-42b2-76b5-f2bb-0a45efe2eb68",
+  "name" : "pakket_titel_3",
+  "display_width" : null,
+  "label" : "Pakket titel 3",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "6b4ded66-01c4-4448-2f38-b7be5777f901",
+  "name" : "pakket_3_info",
+  "display_width" : null,
+  "label" : "Pakket 3 Info",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+}, {
+  "id" : "e5af448e-2ecd-2978-1c24-3f2a669a8585",
+  "name" : "pakket_2_info",
+  "display_width" : null,
+  "label" : "Pakket 2 Info",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+}, {
+  "id" : "9c5d360f-7ee5-f543-f19e-24645b483fff",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "bcfe784a-1b0b-c301-6869-a14320e90c28",
+  "name" : "pakket_1_info",
+  "display_width" : null,
+  "label" : "Pakket 1 Info",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+} ]

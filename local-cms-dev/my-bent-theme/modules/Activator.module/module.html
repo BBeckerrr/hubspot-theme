@@ -1,0 +1,88 @@
+<div class="package-chooser">
+  <div class="switch-container">
+    <span class="text_switch off">Maandelijks</span>
+    <label class="switch">
+      <input type="checkbox" id="pricing-switch">
+      <span class="slider round"></span>
+    </label>
+    <span class="text_switch on">Jaarlijks</span>
+  </div>
+  <div class="package-container">
+    <div class="package">
+      <h3>{% inline_text field="pakket_titel_1" value="{{ module.pakket_titel_1 }}" %}</h3>
+      <div id="monthly-price-1">{% inline_text field="maandelijks_1" value="{{ module.maandelijks_1 }}" %}</div><div id="annual-price-1">{% inline_text field="jaarlijks_1" value="{{ module.jaarlijks_1 }}" %}</div><span class="after_price_text"> per maand</span>
+      <button onclick="selectPackage('Package 1')">Select</button>
+      <div class="package_info">
+        {% inline_rich_text field="pakket_1_info" value="{{ module.pakket_3_info }}" %}
+      </div>
+    </div>
+    <div class="package">
+      <h3>{% inline_text field="pakket_titel_2" value="{{ module.pakket_titel_2 }}" %}</h3>
+      <div id="monthly-price-2">{% inline_text field="maandelijks_2" value="{{ module.maandelijks_2 }}" %}</div><div id="annual-price-2">{% inline_text field="jaarlijks_2" value="{{ module.jaarlijks_2 }}" %}</div><span class="after_price_text"> per maand</span>
+      <button onclick="selectPackage('Package 2')">Select</button>
+      <div class="package_info">
+        {% inline_rich_text field="pakket_2_info" value="{{ module.pakket_2_info }}" %}
+      </div>
+    </div>
+    <div class="package">
+      <h3>{% inline_text field="pakket_titel_3" value="{{ module.pakket_titel_3 }}" %}</h3>
+       <div id="monthly-price-3">{% inline_text field="maandelijks_3" value="{{ module.maandelijks_3 }}" %}</div><div id="annual-price-3">{% inline_text field="jaarlijks_3" value="{{ module.jaarlijks_3 }}" %}</div><span class="after_price_text"> per maand</span>
+      <button onclick="selectPackage('Package 3')">Select</button>
+      <div class="package_info">
+        {% inline_rich_text field="pakket_3_info" value="{{ module.pakket_3_info }}" %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="price-maker-step">
+  <div class="step-header">
+    <span class="step-title"><h2>Step 2: Customize your package</h2></span>
+    <label class="step-toggle">
+      <input type="checkbox" id="step-toggle-2">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <div class="step-content">
+    <div class="box">
+      <div class="box-title"><h4>Box 1: Number of components and keywords</h2></div>
+      <div class="box-subtitle">Choose the number of components and keywords you need</div>
+      <div class="slider-container">
+        <div class="slider-title">Number of components:</div>
+        <div class="slider-value"><span id="component-value">10</span></div>
+        <input type="range" min="10" max="40" step="10" value="10" class="slider" id="component-slider">
+        <div class="slider-title">Number of keywords:</div>
+        <div class="slider-value"><span id="keyword-value">10</span></div>
+        <input type="range" min="10" max="40" step="10" value="10" class="slider" id="keyword-slider">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-title"><h4>Box 2: Distance and location</h2></div>
+      <div class="box-subtitle">Enter your zip code and select the distance to search</div>
+      <div class="input-container">
+        <div class="input-title">Zip code:</div>
+        <input type="text" class="input-field" id="zip-input">
+        <div class="input-title">Search distance:</div>
+        <div class="slider-value"><span id="distance-value">40</span> km</div>
+        <input type="range" min="40" max="240" step="20" value="40" class="slider" id="distance-slider">
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-title"><h4>Box 3: Location on map</h2></div>
+      <div class="box-subtitle">Your location on the map</div>
+       <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-title"><h4>Box 4: Quality level and price</h2></div>
+      <div class="box-subtitle">Choose your quality level and see the price increase</div>
+      <div class="slider-container">
+        <div class="slider-title">Quality level:</div>
+        <div class="slider-value"><span id="quality-value">goed</span></div>
+        <input type="range" min="0" max="5" step="1" value="0" class="slider" id="quality-slider">
+        <div class="price-container">Price: &euro;<span id="price">0</span></div>
+      </div>
+    </div>
+  </div>
+</div>

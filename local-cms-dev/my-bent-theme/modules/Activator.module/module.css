@@ -1,0 +1,347 @@
+.package-chooser {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+/*   position: absolute; */
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.package-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.package {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 33%;
+  margin: 10px;
+}
+
+.package h3 {
+  margin-top: 0;
+}
+
+.package p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.package button {
+  background-color: #2196F3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.package button:hover {
+  background-color: #0c7cd5;
+}
+
+.package.selected {
+  border-color: #2196F3;
+  box-shadow: 0 0 5px #2196F3;
+}
+
+.text_switch{
+  margin: 5px;
+}
+
+.after_price_text{
+  font-size: 14px;
+}
+
+.package_info {
+    text-align: initial;
+}
+.package_info li {
+    font-size: 14px;
+}
+
+/* Price maker styles */
+.price-maker {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+/* Step 2 styles */
+.price-maker-step2 {
+  display: none;
+}
+
+/* Show/hide step 2 */
+.show-step2:checked ~ .price-maker-step2 {
+  display: block;
+}
+
+/* box styles */
+.price-maker-step2 .box {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* box title styles */
+.price-maker-step2 .box h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* box subtext styles */
+.price-maker-step2 .box p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* input field styles */
+.price-maker-step2 input[type="text"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* range slider */
+.price-maker-step2 input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: #ddd;
+  height: 5px;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.price-maker-step2 input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Google Maps styles */
+.price-maker-step2 #map {
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+/* Slider styles */
+.price-maker-step2 .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #ddd;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.price-maker-step2 .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.price-maker-step2 .slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Price styles */
+.price-maker-step2 .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Step 2 */
+.price-maker-step-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.price-maker-step-2 .price-maker-box {
+  width: 25%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+
+.price-maker-step-2 .price-maker-box h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.price-maker-step-2 .price-maker-box p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.price-maker-step-2 .price-maker-box input[type="text"] {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.price-maker-step-2 .price-maker-box .range-slider-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.price-maker-step-2 .price-maker-box .range-slider-container .range-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+.price-maker-step-2 .price-maker-box .range-slider-container .range-slider .range-slider-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #337ab7;
+}
+
+.price-maker-step-2 .price-maker-box .range-slider-container .range-slider .range-slider-thumb {
+  position: absolute;
+  top: -8px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #337ab7;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.price-maker-step-2 .price-maker-box .slider-value-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.price-maker-step-2 .price-maker-box .slider-value-container span {
+  font-weight: 500;
+}
+
+.box {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.step-content{
+      display: flex;
+    gap: 25px;
+}
+
+.box-subtitle{
+  font-size: 14px;
