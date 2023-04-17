@@ -1,6 +1,6 @@
 
 {
-  "name": "my-bent-theme",
+  "name": "webs-theme",
   "version": "0.0.1",
   "devDependencies": {
     "@hubspot/cli": "^3.0.9",
